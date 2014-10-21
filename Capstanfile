@@ -12,7 +12,7 @@ base: cloudius/osv-openjdk
 #
 # The command line passed to OSv to start up the application.
 #
-cmdline: /java.so io.osv.MultiJarLoader -mains /javamains
+cmdline: /java.so -jar /capstan-example-java.jar
 
 #
 # The command to use to build the application.  In this example, we just use
@@ -25,4 +25,3 @@ build: mvn package
 #
 files:
   /capstan-example-java.jar: target/capstan-example-java-1.0-SNAPSHOT-jar-with-dependencies.jar
-  /javamains: javamains
