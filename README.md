@@ -18,10 +18,24 @@ Next step, clone this repository:
 git clone git@github.com:cloudius-systems/capstan-example-java.git
 ```
 
-And finally, build and run the application:
+two alternatives to run the application, with or without Capstanfile
+
+* Using a Capstanfile
 
 ``` sh
-capstan run
+capstan run 
+```
+
+* Using a Jar file directly, without a Capstanfile
+
+```
+mvn package
+```
+
+Run Capstan with the result Jar file as parameter:
+
+```
+capstan run target/capstan-example-java-1.0-SNAPSHOT.jar
 ```
 
 That's it!
