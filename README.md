@@ -26,7 +26,7 @@ two alternatives to run the application, with or without Capstanfile
 capstan run 
 ```
 
-* Using a Jar file directly, without a Capstanfile
+* Using a Jar file directly using [Apache Maven](https://maven.apache.org/), without a Capstanfile
 
 ```
 mvn package
